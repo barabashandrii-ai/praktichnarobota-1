@@ -23,7 +23,6 @@ public class T2 {
             right--;
         }
 
-
         return true;
     }
 }
