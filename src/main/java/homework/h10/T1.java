@@ -1,5 +1,6 @@
 package homework.h10;
 
+// base
 // LeetCode №3304: Find the K-th Character in String Game I
 public class T1 {
   public char kthCharacter(int k) {

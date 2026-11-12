@@ -1,5 +1,6 @@
 package homework.h10;
 
+// base
 // LeetCode №344: Reverse String
 // https://leetcode.com/problems/reverse-string/
 public class T2 {
