@@ -1,22 +1,24 @@
 package homework.h11;
 
+// base
+// https://leetcode.com/problems/majority-element/
 public class T2 {
-    public static int majorityElement(int[] nums) {
-        int count = 0;
-        Integer candidate = null;
+  public static int majorityElement(int[] nums) {
+    int count = 0;
+    Integer candidate = null;
 
-        for (int num : nums) {
-            if (count == 0) {
-                candidate = num;
-            }
-            count += (num == candidate) ? 1 : -1;
-        }
-
-        return candidate;
+    for (int num : nums) {
+      if (count == 0) {
+        candidate = num;
+      }
+      count += (num == candidate) ? 1 : -1;
     }
 
-    public static void main(String[] args) {
-        int[] testArray = {2, 2, 1, 1, 1, 2, 2};
-        System.out.println("Majority Element: " + majorityElement(testArray)); //
-    }
+    return candidate;
+  }
+
+  public static void main(String[] args) {
+    int[] testArray = {2, 2, 1, 1, 1, 2, 2};
+    System.out.println("Majority Element: " + majorityElement(testArray)); //
+  }
 }
